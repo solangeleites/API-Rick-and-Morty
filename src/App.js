@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { GlobalStyles } from './styles/GlobalStyles';
+import Header from './components/header/Header';
+// import Card from './components/cards/Card';
+ import Personajes from './pages/personajes/Personajes';
+// import Episodios from './pages/episodios/Episodios';
+import axios from 'axios';
+import Home from './pages/home/Home';
+import {ReactQueryDevetools} from 'react-query/devtools';
+import Router from './router/Router';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Router />
+   <GlobalStyles />
+   </>
   );
 }
 
